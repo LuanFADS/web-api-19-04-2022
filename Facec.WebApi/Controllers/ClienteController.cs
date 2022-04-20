@@ -22,6 +22,7 @@ namespace Facec.WebApi.Controllers
         [HttpPost]
         public void Gravar(Cliente cliente) => _servico.Gravar(cliente);
 
+        [HttpGet]
         public IEnumerable<Cliente> Obter() => _servico.Obter();
     }
 }
